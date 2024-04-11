@@ -1,19 +1,55 @@
 .btn-outline-red {
-    color: red;
-    background-color: transparent;
-    border-color: yellow
+    color: #e83434;
+    background-color: #ffcc3c;
+    border-color: #e83434;
+    font-family: Garamond, serif;
 }
 
-  label {
-    margin: auto;
+  .card-active {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Garamond, serif;
+  }
+
+  .card {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Garamond, serif;
+  }
+
+  .img-div {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .smaller-img-div {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    font-family: Garamond, serif;
+    background-image: url("RedYellowGraphicBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .next {
-    width: 50%;
-    margin: auto;
+    color: #ffcc3c;
+    background-color: #e83434;
+    border-color: #ffcc3c;
   }
 
-  .question {
-    width: 50%;
-    margin: auto;
+  .logo {
+    float: right;
+    width: 10%;
+    height: 10%;
   }
