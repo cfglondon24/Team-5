@@ -1,0 +1,64 @@
+label{
+    color: #B27092
+}
+
+#icon-overlay {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+    color: white;
+    font-size: 40px;
+}
+
+.main{
+    margin-left:20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group{
+    padding: 10px 0px 10px;
+}
+
+#category-title{
+    padding: 25px 0px 25px;
+    color: #512D38
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 70%;
+}
+
+.btn-outline-purple {
+    color: #800080;
+    background-color: transparent;
+    border-color: #800080;
+}
+
+.btn-pink {
+    color: #ffffff;
+    background-color: #512D38;
+    border-color: #512D38;
+}
+
+.card-title {
+    color: #B27092
+}
