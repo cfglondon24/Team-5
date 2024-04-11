@@ -135,7 +135,20 @@
             <!-- IF THEY HAVE REACHED THIS POINT, JUST GO TO THE PAGE SAYING
               THAT YOU HAVE A LOW RISK OF SEPSIS -->
   
-        </div>
+            <div id="low_result" style="display: none">
+              <h2>Low Risk of Sepsis</h2>
+              <p>Based on your answers, you have a low risk of developing sepsis. If you have any concerns, please consult a healthcare professional.</p>
+            </div>
+
+            <div id="high_result" style="display: none">
+              <h2>High Risk of Sepsis</h2>
+              <p>Based on your answers, you may be at high risk of developing sepsis. Please seek medical attention immediately.</p>
+            </div>
+
+            <div id="retake" style="display: none">
+              <button type="button" class="btn btn-outline-red mb-4" onclick="retakeQuiz()">Retake Quiz</button>
+            </div>
+
         </div>
 
         <div id="home">

@@ -1,6 +1,8 @@
 async function loadPage(id) {
     const divIds = ['home', 'test', 'vulnerable'];
-    
+    if (id === 'test') {
+        document.querySelector(`[data-card="${1}"]`).style.display = 'block';
+    }
     divIds.forEach(function(divId) {
 
         const div = document.getElementById(divId);
@@ -13,7 +15,32 @@ async function loadPage(id) {
     });
 }
 
-async function nextCard(num) {
+let total_symptoms = 0;
+
+function nextCard(num) {
+    let yesInput = document.querySelector(`input[name="q${num}"][value="Yes"]`);
+    if (yesInput && yesInput.checked) {
+        total_symptoms += 1;
+        console.log('yes3', total_symptoms);
+    }       
     document.querySelector(`[data-card="${num}"]`).style.display = 'none';
     document.querySelector(`[data-card="${num+1}"]`).style.display = 'block';
+}
+
+async function submitQuiz() {
+    document.querySelector(`[data-card="${12}"]`).style.display = 'none';
+    document.getElementById('retake').style.display = 'block';
+    if (total_symptoms == 0) {
+        document.getElementById('low_result').style.display = 'block';
+    }
+    else {
+        document.getElementById('high_result').style.display = 'block';}
+}
+
+async function retakeQuiz() {
+    document.getElementById('low_result').style.display = 'none';
+    document.getElementById('high_result').style.display = 'none';
+    document.getElementById('retake').style.display = 'none';
+    document.querySelector(`[data-card="${1}"]`).style.display = 'block';
+    total_symptoms = 0;
 }
