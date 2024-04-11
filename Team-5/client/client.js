@@ -23,3 +23,18 @@ async function submitQuiz() {
   console.log(answers);
   alert('Quiz submitted! Check the console for answers.');
 }
+
+async function loadPage(id) {
+    const divIds = ['home', 'test', 'vulnerable'];
+    
+    divIds.forEach(function(divId) {
+
+        const div = document.getElementById(divId);
+    
+        if (divId === id) {
+        div.style.display = 'block';
+        } else {
+        div.style.display = 'none';
+        }
+    });
+    }
