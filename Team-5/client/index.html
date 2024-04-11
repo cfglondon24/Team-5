@@ -129,25 +129,26 @@
               <button onclick="submitQuiz()" class="next">Submit</button>
             </div>
 
-            <br>
-            <img src="SepsisAcronym.jpeg" alt="Sepsis Acronym" class="img-div">
-
             <!-- IF THEY HAVE REACHED THIS POINT, JUST GO TO THE PAGE SAYING
               THAT YOU HAVE A LOW RISK OF SEPSIS -->
   
-            <div id="low_result" style="display: none">
+            <div id="low_result" class="card btn-outline-red" style="display: none">
               <h2>Low Risk of Sepsis</h2>
               <p>Based on your answers, you have a low risk of developing sepsis. If you have any concerns, please consult a healthcare professional.</p>
             </div>
 
-            <div id="high_result" style="display: none">
+            <div id="high_result" class="card btn-outline-red" style="display: none">
               <h2>High Risk of Sepsis</h2>
               <p>Based on your answers, you may be at high risk of developing sepsis. Please seek medical attention immediately.</p>
             </div>
 
             <div id="retake" style="display: none">
-              <button type="button" class="btn btn-outline-red mb-4" onclick="retakeQuiz()">Retake Quiz</button>
+              <br>
+              <button type="button" class="btn btn-outline-red mb-4 centered" onclick="retakeQuiz()">Retake Quiz</button>
             </div>
+
+            <br>
+            <img src="SepsisAcronym.jpeg" alt="Sepsis Acronym" class="img-div">
 
         </div>
 
