@@ -15,8 +15,9 @@
 
 <body>
     <div class="main">
-        <h1 class="display-2">Sepsis Awareness</h1>
-        <img src="UKSepsisTrustLogo.jpeg" alt="UK Sepsis Trust Logo" class="logo">
+         <h1 class="h1"> <img src="UKSepsisTrustLogo.jpeg" alt="UK Sepsis Trust Logo" class="logo">
+            SEPSIS AWARENESS</h1>
+        
         
         <button type="button" class="btn btn-outline-red mb-4" onclick="loadPage('home')">Home</button>
         <button type="button" class="btn btn-outline-red mb-4" onclick="loadPage('test')">Test</button>
@@ -31,10 +32,10 @@
         <div id="test" style="display: none">
             <!-- Card 1 -->
 
-            <div class="card-active btn-outline-red" data-card="1">
+            <div class="card btn-outline-red" data-card="1">
               <h2 class="question">Do you feel sick?</h2>
-              <label class="answer"><input type="checkbox" name="q1" value="Yes">Yes</label><br>
-              <label class="answer"><input type="checkbox" name="q1" value="No">No</label><br>
+              <label class="answer"><input type="radio" name="q1" value="Yes">Yes</label><br>
+              <label class="answer"><input type="radio" name="q1" value="No">No</label><br>
               <button onclick="nextCard(1)" class="next">Next</button>
             </div>
           
@@ -44,112 +45,117 @@
 
             <div class="card btn-outline-red" data-card="2" style="display: none">
               <h2 class="question">Do you feel confused?</h2>
-              <label class="answer"><input type="checkbox" name="q2" value="Yes">Yes</label><br>
-              <label class="answer"><input type="checkbox" name="q2" value="No">No</label><br>
+              <label class="answer"><input type="radio" name="q2" value="Yes">Yes</label><br>
+              <label class="answer"><input type="radio" name="q2" value="No">No</label><br>
               <button onclick="nextCard(2)" class="next">Next</button>
             </div>
           
             <!-- Card 3 -->
             <div class="card btn-outline-red" data-card="3" style="display: none">
               <h2 class="question">Do you have a non-blanching rash (rash that won't disappear with pressure)?</h2>
-              <label class="answer"><input type="checkbox" name="q3" value="Yes">Yes</label><br>
-              <label class="answer"><input type="checkbox" name="q3" value="No">No</label><br>
+              <label class="answer"><input type="radio" name="q3" value="Yes">Yes</label><br>
+              <label class="answer"><input type="radio" name="q3" value="No">No</label><br>
               <button onclick="nextCard(3)" class="next">Next</button>
             </div>
 
             <!-- Card 4 -->
             <div class="card btn-outline-red" data-card="4" style="display: none">
               <h2 class="question">Have you not passed urine in the last 18 hours?</h2>
-              <label><input type="checkbox" name="q4" value="Yes">Yes</label><br>
-              <label><input type="checkbox" name="q4" value="No">No</label><br>
+              <label class="answer"><input type="radio" name="q4" value="Yes">Yes</label><br>
+              <label class="answer"><input type="radio" name="q4" value="No">No</label><br>
               <button onclick="nextCard(4)" class="next">Next</button>
             </div>
 
             <!-- Card 5 -->
             <div class="card btn-outline-red" data-card="5" style="display: none">
               <h2 class="question">Have you had chemotherapy recently?</h2>
-              <label class="answer"><input type="checkbox" name="q5" value="Yes">Yes</label><br>
-              <label class="answer"><input type="checkbox" name="q5" value="No">No</label><br>
+              <label class="answer"><input type="radio" name="q5" value="Yes">Yes</label><br>
+              <label class="answer"><input type="radio" name="q5" value="No">No</label><br>
               <button onclick="nextCard(5)" class="next">Next</button>
             </div>
 
             <!-- Card 6 -->
             <div class="card btn-outline-red" data-card="6" style="display: none">
               <h2 class="question">Is your blood pressure lower than 90 mmHg?</h2>
-              <label class="answer"><input type="checkbox" name="q6" value="Yes">Yes</label><br>
-              <label class="answer"><input type="checkbox" name="q6" value="No">No</label><br>
+              <label class="answer"><input type="radio" name="q6" value="Yes">Yes</label><br>
+              <label class="answer"><input type="radio" name="q6" value="No">No</label><br>
               <button onclick="nextCard(6)" class="next">Next</button>
             </div>
 
             <!-- Card 7 -->
             <div class="card btn-outline-red" data-card="7" style="display: none">
               <h2 class="question">Is your respiratory rate greater than or equal to 21 per minute?</h2>
-              <label class="answer"><input type="checkbox" name="q7" value="Yes">Yes</label><br>
-              <label class="answer"><input type="checkbox" name="q7" value="No">No</label><br>
+              <label class="answer"><input type="radio" name="q7" value="Yes">Yes</label><br>
+              <label class="answer"><input type="radio" name="q7" value="No">No</label><br>
               <button onclick="nextCard(7)" class="next">Next</button>
             </div>
 
             <!-- Card 8 -->
             <div class="card btn-outline-red" data-card="8" style="display: none">
               <h2 class="question">Is your heart rate greater than or equal to 91 per minute?</h2>
-              <label class="answer"><input type="checkbox" name="q8" value="Yes">Yes</label><br>
-              <label class="answer"><input type="checkbox" name="q8" value="No">No</label><br>
+              <label class="answer"><input type="radio" name="q8" value="Yes">Yes</label><br>
+              <label class="answer"><input type="radio" name="q8" value="No">No</label><br>
               <button onclick="nextCard(8)" class="next">Next</button>
             </div>
 
             <!-- Card 9 -->
             <div class="card btn-outline-red" data-card="9" style="display: none">
               <h2 class="question">Is your temperature less than 36 degrees Celsius?</h2>
-              <label class="answer"><input type="checkbox" name="q9" value="Yes">Yes</label><br>
-              <label class="answer"><input type="checkbox" name="q9" value="No">No</label><br>
+              <label class="answer"><input type="radio" name="q9" value="Yes">Yes</label><br>
+              <label class="answer"><input type="radio" name="q9" value="No">No</label><br>
               <button onclick="nextCard(9)" class="next">Next</button>
             </div>
             
             <!-- Card 10 -->
             <div class="card btn-outline-red" data-card="10" style="display: none">
               <h2 class="question">Are you / your relatives concerned about your mental status?</h2>
-              <label class="answer"><input type="checkbox" name="q10" value="Yes">Yes</label><br>
-              <label class="answer"><input type="checkbox" name="q10" value="No">No</label><br>
+              <label class="answer"><input type="radio" name="q10" value="Yes">Yes</label><br>
+              <label class="answer"><input type="radio" name="q10" value="No">No</label><br>
               <button onclick="nextCard(10)" class="next">Next</button>
             </div>
 
             <!-- Card 11 -->
             <div class="card btn-outline-red" data-card="11" style="display: none">
               <h2 class="question">Have you had trauma / surgery / a procedure in the last 6 weeks?</h2>
-              <label class="answer"><input type="checkbox" name="q11" value="Yes">Yes</label><br>
-              <label class="answer"><input type="checkbox" name="q11" value="No">No</label><br>
+              <label class="answer"><input type="radio" name="q11" value="Yes">Yes</label><br>
+              <label class="answer"><input type="radio" name="q11" value="No">No</label><br>
               <button onclick="nextCard(11)" class="next">Next</button>
             </div>
 
             <!-- Card 12 -->
             <div class="card btn-outline-red" data-card="12" style="display: none">
               <h2 class="question">Do you have clinical signs of a wound or a skin infection?</h2>
-              <label class="answer"><input type="checkbox" name="q12" value="Yes">Yes</label><br>
-              <label class="answer"><input type="checkbox" name="q12" value="No">No</label><br>
+              <label class="answer"><input type="radio" name="q12" value="Yes">Yes</label><br>
+              <label class="answer"><input type="radio" name="q12" value="No">No</label><br>
               <button onclick="submitQuiz()" class="next">Submit</button>
+            </div>
+
+            <!-- IF THEY HAVE REACHED THIS POINT, JUST GO TO THE PAGE SAYING
+              THAT YOU HAVE A LOW RISK OF SEPSIS -->
+  
+            <div id="low_result" style="display: none" class="card btn-outline-red">
+              <h2>Low Risk of Sepsis</h2>
+              <p>Based on your answers, you have a low risk of developing sepsis. If you have any concerns, please consult a healthcare professional.</p>
+            </div>
+
+            <div id="high_result" style="display: none" class="card btn-outline-red">
+              <h2>High Risk of Sepsis</h2>
+              <p>You have:
+              <span id="symptoms_number"></span> symptoms </p>
+              <p>Based on your answers, you may be at high risk of developing sepsis. Please seek medical attention immediately.</p>
+            </div>
+
+            <div id="retake" style="display: none; justify-content: center; padding:5px">
+              <button type="button" class="btn btn-outline-red mb-4" onclick="retakeQuiz()">Retake Quiz</button>
+             
             </div>
 
             <br>
             <img src="SepsisAcronym.jpeg" alt="Sepsis Acronym" class="img-div">
 
-            <!-- IF THEY HAVE REACHED THIS POINT, JUST GO TO THE PAGE SAYING
-              THAT YOU HAVE A LOW RISK OF SEPSIS -->
-  
-            <div id="low_result" style="display: none">
-              <h2>Low Risk of Sepsis</h2>
-              <p>Based on your answers, you have a low risk of developing sepsis. If you have any concerns, please consult a healthcare professional.</p>
-            </div>
-
-            <div id="high_result" style="display: none">
-              <h2>High Risk of Sepsis</h2>
-              <p>Based on your answers, you may be at high risk of developing sepsis. Please seek medical attention immediately.</p>
-            </div>
-
-            <div id="retake" style="display: none">
-              <button type="button" class="btn btn-outline-red mb-4" onclick="retakeQuiz()">Retake Quiz</button>
-            </div>
-
         </div>
+
+        
 
         <div id="home">
           <div class="card btn-outline-red">
@@ -162,9 +168,7 @@
               <p>Seek medical help urgently. It is treatable as long as it is identified early enough -
                 which is exactly why you should take our quiz if you suspect you have it!</p>
           </div>
-          <div class="img-div">
-            <br><img src="CouldItBeSepsis.jpg" alt="Could It Be Sepsis?">
-          </div>
+          
         </div>
 
         <div id="vulnerable" style="display: none">
@@ -186,5 +190,10 @@
           
 
    </div>
+
+   <div class="img-div">
+    <br><img src="CouldItBeSepsis.jpg" alt="Could It Be Sepsis?">
+  </div>
+  
 </body>
 </html>

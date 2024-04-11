@@ -29,11 +29,12 @@ function nextCard(num) {
 
 async function submitQuiz() {
     document.querySelector(`[data-card="${12}"]`).style.display = 'none';
-    document.getElementById('retake').style.display = 'block';
+    document.getElementById('retake').style.display = 'flex';
     if (total_symptoms == 0) {
         document.getElementById('low_result').style.display = 'block';
     }
     else {
+        document.getElementById('symptoms_number').innerHTML = total_symptoms;
         document.getElementById('high_result').style.display = 'block';}
 }
 
