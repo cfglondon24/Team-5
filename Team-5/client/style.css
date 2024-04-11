@@ -14,12 +14,12 @@
 }
 
 .card {
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 10px; /* Add curved borders */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
-    padding: 20px; /* Add padding inside the card */
-}
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
 .img-div {
     width: 50%;
@@ -74,3 +74,9 @@ body {
 .answer{
     font-size: 25px;
 }
+
+  #retake {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
