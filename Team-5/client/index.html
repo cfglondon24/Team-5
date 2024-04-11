@@ -17,6 +17,35 @@
     <div class="main">
         <h1 class="display-2">Sepsis Awareness</h1>
 
-
-
-   </div></body></html>
+        <div id="quiz">
+            <!-- Card 1 -->
+            <div class="card active" data-card="1">
+              <h2>Question 1: What is 2 + 2?</h2>
+              <label><input type="checkbox" name="q1" value="3"> 3</label>
+              <label><input type="checkbox" name="q1" value="4"> 4</label>
+              <label><input type="checkbox" name="q1" value="5"> 5</label>
+              <button onclick="nextCard(1)">Next</button>
+            </div>
+          
+            <!-- Card 2 -->
+            <div class="card" data-card="2">
+              <h2>Question 2: What is the capital of France?</h2>
+              <label><input type="checkbox" name="q2" value="Paris"> Paris</label>
+              <label><input type="checkbox" name="q2" value="London"> London</label>
+              <label><input type="checkbox" name="q2" value="Berlin"> Berlin</label>
+              <button onclick="nextCard(2)">Next</button>
+            </div>
+          
+            <!-- Card 3 -->
+            <div class="card" data-card="3">
+              <h2>Question 3: Which of these are programming languages?</h2>
+              <label><input type="checkbox" name="q3[]" value="JavaScript"> JavaScript</label>
+              <label><input type="checkbox" name="q3[]" value="HTML"> HTML</label>
+              <label><input type="checkbox" name="q3[]" value="Python"> Python</label>
+              <button onclick="submitQuiz()">Submit</button>
+            </div>
+          </div>
+          
+   </div>
+   </body>
+   </html>
