@@ -1,4 +1,14 @@
-# Code for Good 2024 project
+# Team 5 Code for Good 2024 project
+
+## Team members
+- Rhian Li
+- Rose Laird
+- Amelia Lim
+- Kaleem Komal
+
+## What is our project?
+- This repo features our website, which provides general information about what sepsis is, how to prevent it, and vulnerable groups
+- It also contains a quiz which is used to determine whether the person taking the quiz is likely to have sepsis or not
 
 ## Image credits
 - **RedYellowGraphicBG.jpg:** https://media.istockphoto.com/id/1054866988/vector/vibrant-abstract-background.jpg?s=612x612&w=0&k=20&c=0KqKEv-DOeHlVW-3Q_PBckw3lqLE61Mc1NuZ3XJPFoc=
