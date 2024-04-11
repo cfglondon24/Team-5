@@ -16,12 +16,21 @@
 <body>
     <div class="main">
         <h1 class="display-2">Sepsis Awareness</h1>
+        
+        <button type="button" class="btn btn-outline-red mb-4" onclick="loadPage('home')">Home</button>
+        <button type="button" class="btn btn-outline-red mb-4" onclick="loadPage('test')">Test</button>
+        <button type="button" class="btn btn-outline-red mb-4" onclick="loadPage('vulnerable')">Vulnerable Communities</button>
 
         <div id="quiz">
             <!-- ONE QUESTION AT A TIME -->
 
             <!-- Card 1 - IF THIS IS YES, CONTINUE WITH THE QUIZ,
               OTHERWISE GO TO A PAGE THAT SAYS YOU HAVE A LOW RISK OF SEPSIS -->
+=======
+
+        <div id="test" style="display: none">
+            <!-- Card 1 -->
+
             <div class="card active" data-card="1">
               <h2>Do you feel sick?</h2>
               <label><input type="checkbox" name="q1" value="Yes">Yes</label>
@@ -119,10 +128,30 @@
               <button onclick="submitQuiz()">Submit</button>
             </div>
 
+
             <!-- IF THEY HAVE REACHED THIS POINT, JUST GO TO THE PAGE SAYING
               THAT YOU HAVE A LOW RISK OF SEPSIS -->
   
         </div>
+        </div>
+
+        <div id="home">
+            <h2>Home</h2>
+            <p>Welcome to the Sepsis Awareness website. This website is designed to help you learn more about sepsis and how to prevent it.</p>
+        </div>
+
+        <div id="vulnerable" style="display: none">
+            <h2>Vulnerable Communities</h2>
+            <p>People who are at higher risk of developing sepsis include:</p>
+            <ul>
+                <li>Children under 1 year old</li>
+                <li>Adults over 65 years old</li>
+                <li>People with weakened immune systems</li>
+                <li>People with chronic medical conditions</li>
+            </ul>
+        </div>
+
+
    </div>
 </body>
 </html>
