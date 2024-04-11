@@ -13,6 +13,12 @@
     font-family: Garamond, serif;
   }
 
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .card {
     width: 50%;
     display: block;
@@ -52,4 +58,14 @@
     float: right;
     width: 10%;
     height: 10%;
+  }
+
+  h1 {
+    color: #e83434;
+  }
+
+  #retake {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
