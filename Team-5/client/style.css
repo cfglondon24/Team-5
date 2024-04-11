@@ -3,3 +3,17 @@
     background-color: transparent;
     border-color: yellow
 }
+
+  label {
+    margin: auto;
+  }
+
+  .next {
+    width: 50%;
+    margin: auto;
+  }
+
+  .question {
+    width: 50%;
+    margin: auto;
+  }
