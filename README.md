@@ -16,3 +16,4 @@
 - **UKSepsisTrustLogo.jpeg:** https://sepsistrust.org/wp-content/uploads/2022/09/The-UK-Sepsis-Trust-New-Logo-1.jpeg
 - **KnowSomeone.jpeg:** https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/default/0001/65/thumb_64572_default_news_size_5.jpeg
 - **SepsisAcronym.jpeg:** https://sepsistrust.org/wp-content/uploads/2022/03/Dm0e3qvW4AADdcN-1.jpeg
+ <br /> <br /> The code ("Code") in this repository was created solely by the student teams during a coding competition hosted by JPMorgan Chase Bank, N.A. ("JPMC"). JPMC did not create or contribute to the development of the Code. This Code is provided AS IS and JPMC makes no warranty of any kind, express or implied, as to the Code, including but not limited to, merchantability, satisfactory quality, non-infringement, title or fitness for a particular purpose or use.
